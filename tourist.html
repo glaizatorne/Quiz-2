@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./Image/background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .logo{
+            width: 100px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+         }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+            font-family: 'Kaushan Script', cursive;
+            transition: 0.5s
+        }
+        .content h1:hover{
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100px;
+            line-height: 25px;
+         }
+         
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:black;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 0px;
+}
+body , html {
+    overflow-x: hidden;
+ }
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:black;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 0px;
+}
+ body , html {
+    overflow-x: hidden;
+}
+/* Events */
+section {
+    width: 80%;
+    margin: 80px;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:black;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 0px;
+}
+body , html {
+    overflow-x: hidden;
+}
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:black;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+p {
+    text-align: center;
+    padding: 0px;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Image/br.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: rgb(8, 8, 8) solid;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 20px;
+}
+.explore-content p {
+    color:rgb(8, 8, 8) solid;
+    font-size: 20px;
+    margin: 50px;
+}
+.tours .row .col{
+    width:50%;
+}
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-gallery img{
+    width: 250px;
+    margin: 20px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: black;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+ 
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+/* Events */
+.row {
+   flex-direction: column;
+}
+.row-col {
+   margin: 20px auto;
+}
+.col-img {
+   max-width: 90%;
+}
+/* explore */
+.explore-content {
+   width: 100%;
+}
+.tours .col {
+   width: 100%;
+}
+.image-gallery {
+   justify-content: center;
+   align-items: center;
+}
+.image-gallery img {
+   width: 90%;
+
+}
+.footer {
+   padding: 10px;
+}
+</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h1 class="Logo" style="font-family: 'Caveat', cursive;">T.Adventure</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tourist.html">Tourist Spot</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+    <<div class="content">
+        <h1>Top of the line Tourist Spot</h1>
+        <p> "Please Scroll Down" </p>
+    </div>
+    </div>
+    <!-- == Events == -->
+    <section>
+        <div class="title">
+            <h1>Places</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div clas="col">
+                <img src="./Image/pic1.jpg" height="300" width="580" alt="" />
+                <img src="./Image/pic2.jpg" height="300" width="580" alt="" />
+                <h4>El Nido</h4>
+                <p>El Nido is known for its stunning lagoons, white sand beaches, rocky islets, towering limestone cliffs, and glasslike waters teeming with marine life.<br> The island has earned nothing but praises from visitors, and numerous accolades of being one the best island and beach destinations in the world.</p>
+            </div>
+        </div>
+    </div>
+    <!-- == Events == -->
+    <section>
+        <div class="title">
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div clas="col">
+                <img src="./Image/pic3.jpg" height="300" width="450" alt="" />
+                <img src="./Image/pic4.jpg" height="300" width="450" alt="" />
+                <h4>Pwerto Prinsesa</h4>
+                <p>Puerto Princesa is the capital of the island province of Palawan.<br> The city has been acclaimed several times as the cleanest and greenest city in the Philippines.<br> With a wide range of attractions ranging from beaches to wildlife reserves, Puerto Princesa is a nature lover's paradise.</p>
+            </div>
+        </div>
+    </div>
+    <!-- == Events == -->
+    <section>
+        <div class="title">
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div clas="col">
+                <img src="./Image/pic5.jpg" height="300" width="385" alt="" />
+                <img src="./Image/pic6.jpg" height="300" width="385" alt="" />
+                <h4>Intramuros</h4>
+                <p>Intramuros, urban district and historic walled city within Metropolitan Manila, in the Philippines. The name, from the Spanish word meaning “within walls,” refers to the fortified city founded at the mouth of the Pasig River shortly after 1571 by the Spanish conquistador Miguel López de Legazpi.</p>
+            </div>
+        </div>
+    </div>
+    <!-- == Events == -->
+    <section>
+        <div class="title">
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div clas="col">
+                <img src="./Image/pic7.jpg" height="250" width="300" alt="" />
+                <img src="./Image/pic8.jpg" height="250" width="300" alt="" />
+                <h4>Batad Rice Terraces</h4>
+                <p>Batad is a secluded community and remote village of Banaue in the province of Ifugao, home to a magnificent amphitheatre-like rice terraces that form part of the five Rice Terraces of the Cordilleras awarded the UNESCO World Heritage Site title since 1995.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="explore">
+    <div class="explore-content">
+        <h1>Explor the philippines</h1>
+        <p>The Philippines is called Asia's pearl of the orient for the richness of its culture and the beauty of its landscape. It is home to centuries old churches, turn of the century mansions, ancient forts and modern museums.The Philippines is an archipelago comprising 7,100 islands.</p>
+    </div>
+</section>
+<section class="tours">
+    <div class="row">
+        <div class="col content-col">
+            <h1>Unique Description </h1>
+            <p>A place of interest where tourists visit, typically for its inherent or an exhibited natural or cultural value, historical significance, natural or built beauty, offering leisure and amusement.</p>
+        </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="./Image/img1.jpg" alt="">
+                <img src="./Image/img2.jpg" alt="">
+                <img src="./Image/img3.jpg" alt="">
+                <img src="./Image/img4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <p>No copyright shall subsist in any work of the Government of the Philippines.</p>
+    <p>Copyright © Places to visit in the Philippines</p>
+</section>
+</body>
+</html>
+</body>
+</html>

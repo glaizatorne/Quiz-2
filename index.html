@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE Quiz2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./Image/background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .logo{
+            width: 100px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+         }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+            font-family: 'Kaushan Script', cursive;
+            transition: 0.5s
+        }
+        .content h1:hover{
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100px;
+            line-height: 25px;
+         }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h1 class="Logo" style="font-family: 'Caveat', cursive;">T.Adventure</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tourist.html">Tourist Spot</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+    <<div class="content">
+        <h1>Places to visit in the Philippines</h1>
+        <p>It's More fun in the Philippines!</p>
+    </div>
+    </div>
+</body>
+</html>
